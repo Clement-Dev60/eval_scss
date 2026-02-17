@@ -110,6 +110,7 @@ nav {
 			text-decoration: none;
 			color: white;
 			font-size: 10px;
+			display: inline-block;
 		}
 	}
 }
@@ -157,7 +158,8 @@ hr {
 	& .cards {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: center;
+		gap: 1rem;
 	}
 	& .card {
 		width: 340px;

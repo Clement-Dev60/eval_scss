@@ -112,6 +112,7 @@ nav .icons {
   text-decoration: none;
   color: white;
   font-size: 10px;
+  display: inline-block;
 }
 
 .brands {
@@ -158,7 +159,8 @@ hr {
 .news .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 1rem;
 }
 .news .card {
   width: 340px;
