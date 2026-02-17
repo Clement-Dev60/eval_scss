@@ -30,12 +30,16 @@ nav h3 a span {
 nav h3 a {
   text-decoration: none;
 }
-nav ion-icon {
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+nav button ion-icon {
   font-size: 1.5rem;
   color: grey;
 }
 nav .icons {
-  cursor: pointer;
   display: flex;
   gap: 10px;
 }
@@ -338,19 +342,95 @@ footer .logos {
   justify-content: center;
   flex-wrap: nowrap;
 }
+footer .logos a .logo {
+  border: 1px solid grey;
+  border-radius: 100%;
+  padding: 5%;
+  color: grey;
+}
 footer a {
   color: grey;
   text-decoration: none;
   font-size: 12px;
   line-height: 30px;
 }
-footer .logo {
-  border: 1px solid grey;
-  border-radius: 100%;
-  padding: 5%;
-  color: grey;
-}
 
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  nav .liens {
+    display: none;
+  }
+  nav .icons ion-icon:last-child {
+    display: block;
+  }
+  .hero {
+    text-align: left;
+  }
+  .hero .texts {
+    margin: 20% 1%;
+  }
+  .hero .encadre {
+    width: 50%;
+  }
+  .hero h1 {
+    width: 100%;
+    font-size: 36px;
+    padding-right: 20%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+  }
+  .hero .desc {
+    width: 100%;
+    font-size: 12px;
+    padding-right: 15%;
+    margin-bottom: 15%;
+  }
+  .hero .buttons {
+    align-items: center;
+  }
+  .hero .bottom-hero {
+    display: flex;
+    justify-content: bottom;
+  }
+  .hero .bottom-hero a {
+    display: flex;
+    flex-direction: column;
+  }
+  .brands {
+    flex-wrap: wrap;
+    gap: 7%;
+    padding: 10%;
+    line-height: 250%;
+  }
+  .brands h2 {
+    font-size: 14px;
+  }
+  .news .card {
+    width: 100%;
+  }
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .avantages {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .avantages .avantage {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  footer .logos {
+    justify-content: center;
+  }
+}
 .card_profile {
   border-radius: 16px;
   border: 1px solid black;

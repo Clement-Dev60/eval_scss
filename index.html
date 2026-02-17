@@ -10,183 +10,193 @@
     <meta name="description" content="" />
 </head>
 
-<body></body>
-<nav class="nav">
-    <h3>
-        <a href="index.html">STEP<span class="forge">FORGE</span></a>
-    </h3>
-    <div class="liens">
-        <a class="liens-nav" href="#hero">ACCUEIL</a>
-        <a class="liens-nav" href="#brands">COLLECTION</a>
-        <a class="liens-nav" href="#about">À PROPOS</a>
-        <a class="liens-nav" href="#">CONTACT</a>
-    </div>
-    <div class="icons">
-        <ion-icon name="bag-handle-outline"></ion-icon>
-        <ion-icon name="menu-outline"></ion-icon>
-    </div>
-</nav>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <nav class="nav" role="navigation" aria-label="Navigation principale">
+        <h3>
+            <a href="index.html">STEP<span class="forge">FORGE</span></a>
+        </h3>
+        <div class="liens">
+            <a class="liens-nav" href="#hero">ACCUEIL</a>
+            <a class="liens-nav" href="#brands">COLLECTION</a>
+            <a class="liens-nav" href="#about">À PROPOS</a>
+            <a class="liens-nav" href="#">CONTACT</a>
+        </div>
+        <div class="icons">
+            <button aria-label="Voir le panier">
+                <ion-icon class="" name="bag-handle-outline" aria-hidden="true"></ion-icon>
+            </button>
 
-<section id="hero" class="hero">
-    <div class="texts">
-        <p class="encadre">NOUVELLE COLLECTION EN 2026</p>
-        <h1>WALK THE FUTURE<span>.</span></h1>
-        <p class="desc">
-            Des sneakers premiums conçues pour ceux qui donnent le rythme. Confort
-            inégalé, design audacieux, attitude streetwear.
-        </p>
-        <div class="buttons">
-            <button class="buy">
-                ACHETER <ion-icon name="arrow-forward-outline"></ion-icon>
-            </button>
-            <button class="our-story">NOTRE HISTOIRE</button>
-        </div>
-    </div>
-    <div class="bottom-hero">
-        <a class="scroll" href="#news">DÉFILER <ion-icon name="chevron-down-outline"></ion-icon></a>
-    </div>
-</section>
-<div id="brands" class="brands">
-    <h2>NIKE</h2>
-    <span>•</span>
-    <h2>ADIDAS</h2>
-    <span>•</span>
-    <h2>NEW BALANCE</h2>
-    <span>•</span>
-    <h2>PUMA</h2>
-    <span>•</span>
-    <h2>JORDAN</h2>
-</div>
-<hr />
-<section id="news" class="news">
-    <p>SÉLÉCTIONNÉ POUR VOUS</p>
-    <h2>NOUVEAUTÉS</h2>
-    <div class="cards">
-        <div class="card">
-            <img src="./assets/images/phatom_runner.png" alt="" />
-            <p class="new">NOUVEAU</p>
-            <button class="hearth">
-                <ion-icon name="heart-outline"></ion-icon>
-            </button>
-            <p>STEPFORGE</p>
-            <h3>Phantom Runner X</h3>
-            <h2>189 €</h2>
-            <button class="add-to-cart">
-                <ion-icon name="bag-handle-outline"></ion-icon> AJOUTER AU PANIER
+            <button aria-label="Ouvrir le menu">
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
             </button>
         </div>
-        <div class="card">
-            <img src="./assets/images/urban-drift.png" alt="" />
-            <button class="hearth">
-                <ion-icon name="heart-outline"></ion-icon>
-            </button>
-            <p>STEPFORGE</p>
-            <h3>Urban Drift Pro</h3>
-            <h2>219 €</h2>
-            <button class="add-to-cart">
-                <ion-icon name="bag-handle-outline"></ion-icon> AJOUTER AU PANIER
-            </button>
-        </div>
-        <div class="card">
-            <img src="./assets/images/blaze-high.png" alt="" />
-            <p class="new">TENDANCE</p>
-            <button class="hearth">
-                <ion-icon name="heart-outline"></ion-icon>
-            </button>
-            <p>STEPFORGE</p>
-            <h3>Blaze High OG</h3>
-            <div class="prices">
-                <h2>249 €</h2>
-                <h3>299 €</h3>
-            </div>
-            <button class="add-to-cart">
-                <ion-icon name="bag-handle-outline"></ion-icon> AJOUTER AU PANIER
-            </button>
-        </div>
-        <div class="card">
-            <img src="./assets/images/stealth-low.png" alt="" />
-            <button class="hearth">
-                <ion-icon name="heart-outline"></ion-icon>
-            </button>
-            <p>STEPFORGE</p>
-            <h3>Stealth Low V2</h3>
-            <h2>169 €</h2>
-            <button class="add-to-cart">
-                <ion-icon name="bag-handle-outline"></ion-icon> AJOUTER AU PANIER
-            </button>
-        </div>
-        <div class="card">
-            <img src="./assets/images/forge-one.png" alt="" />
-            <p class="new">ÉDITION LIMITÉE</p>
-            <button class="hearth">
-                <ion-icon name="heart-outline"></ion-icon>
-            </button>
-            <p>STEPFORGE</p>
-            <h3>Forge One Retro</h3>
-            <h2>279 €</h2>
-            <button class="add-to-cart">
-                <ion-icon name="bag-handle-outline"></ion-icon> AJOUTER AU PANIER
-            </button>
-        </div>
-        <div class="card">
-            <img src="./assets/images/volt-street.png" alt="" />
-            <button class="hearth">
-                <ion-icon name="heart-outline"></ion-icon>
-            </button>
-            <p>STEPFORGE</p>
-            <h3>Volt Street Max</h3>
-            <div class="prices">
-                <h2>199 €</h2>
-                <h3>239 €</h3>
-            </div>
-            <button class="add-to-cart">
-                <ion-icon name="bag-handle-outline"></ion-icon> AJOUTER AU PANIER
-            </button>
-        </div>
-    </div>
-</section>
+    </nav>
+    <main id="main-content" role="main">
 
-<section id="about" class="about" aria-labelledby="about-title">
-    <p>POURQUOI NOUS CHOISIR</p>
-    <h2>LA DIFFÉRENCE STEPFORGE</h2>
 
-    <div class="avantages">
-        <div class="avantage">
-            <div class="icon-box">
-                <ion-icon class="icone" name="rocket-outline"></ion-icon>
+        <section id="hero" class="hero" aria-labelledby="hero-title">
+            <div class="texts">
+                <p class="encadre">NOUVELLE COLLECTION EN 2026</p>
+                <h1 id="hero-title">WALK THE FUTURE<span aria-hidden="true">.</span></h1>
+                <p class="desc">
+                    Des sneakers premiums conçues pour ceux qui donnent le rythme. Confort
+                    inégalé, design audacieux, attitude streetwear.
+                </p>
+                <div class="buttons">
+                    <button class="buy" aria-label="Acheter la collection 2026">ACHETER <ion-icon
+                            name="arrow-forward-outline"></ion-icon>
+                    </button>
+                    <button class="our-story" aria-label="Découvrir notre histoire">NOTRE HISTOIRE</button>
+                </div>
             </div>
-            <h3>LIVRAISON RAPIDE</h3>
-            <p>
-                Livraison express gratuite sur toutes les commandes.
-                Recevez vos sneakers sous 48h, partout en Europe.
-            </p>
-        </div>
-        <div class="avantage">
-            <div class="icon-box">
-                <ion-icon class="icone" name="shield-checkmark-outline"></ion-icon>
+            <div class="bottom-hero">
+                <a class="scroll" href="#news" aria-label="Aller aux nouveautés">DÉFILER <ion-icon
+                        name="chevron-down-outline"></ion-icon></a>
             </div>
-            <h3>100% AUTHENTIQUE</h3>
-            <p>
-                Chaque paire est vérifiée par notre équipe d'experts.
-                Authenticité garantie ou remboursé, sans discussion.
-            </p>
+        </section>
+        <div id="brands" class="brands" role="list" aria-label="Marques partenaires">
+            <h2 role="listitem">NIKE</h2>
+            <span aria-hidden="true">•</span>
+            <h2 role="listitem">ADIDAS</h2>
+            <span aria-hidden="true">•</span>
+            <h2 role="listitem">NEW BALANCE</h2>
+            <span aria-hidden="true">•</span>
+            <h2 role="listitem">PUMA</h2>
+            <span aria-hidden="true">•</span>
+            <h2 role="listitem">JORDAN</h2>
         </div>
-        <div class="avantage">
-            <div class="icon-box">
-                <ion-icon class="icone" name="refresh-outline"></ion-icon>
-            </div>
-            <h3>RETOURS GRATUITS</h3>
-            <p>
-                Pas la bonne taille ? Retournez toute paire non portée
-                sous 30 jours pour un remboursement intégral.
-                Simple et sans tracas.
-            </p>
-        </div>
+        <hr />
+        <section id="news" class="news" aria-labelledby="news-title">
+            <p>SÉLÉCTIONNÉ POUR VOUS</p>
+            <h2 id="news-title">NOUVEAUTÉS</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="./assets/images/phatom_runner.png" alt="Sneakers Phantom Runner X" />
+                    <p class="new">NOUVEAU</p>
+                    <button class="hearth" aria-label="Ajouter Phantom Runner X aux favoris">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+                    <p>STEPFORGE</p>
+                    <h3>Phantom Runner X</h3>
+                    <h2>189 €</h2>
+                    <button class="add-to-cart" aria-label="Ajouter Phantom Runner X au panier">
+                        <ion-icon name="bag-handle-outline"></ion-icon> AJOUTER AU PANIER
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/urban-drift.png" alt="Sneakers Urban Drift Pro" />
+                    <button class="hearth" aria-label="Ajouter Urban Drift Pro aux favoris">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+                    <p>STEPFORGE</p>
+                    <h3>Urban Drift Pro</h3>
+                    <h2>219 €</h2>
+                    <button class="add-to-cart" aria-label="Ajouter Urban Drift Pro au panier">
+                        <ion-icon name="bag-handle-outline"></ion-icon> AJOUTER AU PANIER
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/blaze-high.png" alt="Sneakers Blaze High OG" />
+                    <p class="new">TENDANCE</p>
+                    <button class="hearth" aria-label="Ajouter Blaze High OG aux favoris">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+                    <p>STEPFORGE</p>
+                    <h3>Blaze High OG</h3>
+                    <div class="prices">
+                        <h2>249 €</h2>
+                        <h3 aria-label="Ancien prix 299 euros">299 €</h3>
+                    </div>
+                    <button class="add-to-cart" aria-label="Ajouter Blaze High OG au panier">
+                        <ion-icon name="bag-handle-outline"></ion-icon> AJOUTER AU PANIER
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/stealth-low.png" alt="Sneakers Stealth Low V2" />
+                    <button class="hearth" aria-label="Ajouter Stealth Low V2 aux favoris">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+                    <p>STEPFORGE</p>
+                    <h3>Stealth Low V2</h3>
+                    <h2>169 €</h2>
+                    <button class="add-to-cart" aria-label="Ajouter Stealth Low V2 au panier">
+                        <ion-icon name="bag-handle-outline"></ion-icon> AJOUTER AU PANIER
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/forge-one.png" alt="Sneakers Forge One Retro" />
+                    <p class="new">ÉDITION LIMITÉE</p>
+                    <button class="hearth" aria-label="Ajouter Forge One Retro aux favoris">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+                    <p>STEPFORGE</p>
+                    <h3>Forge One Retro</h3>
+                    <h2>279 €</h2>
+                    <button class="add-to-cart">
+                        <ion-icon name="bag-handle-outline"></ion-icon> AJOUTER AU PANIER
+                    </button>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/volt-street.png" alt="Sneakers Volt Street Max" />
+                    <button class="hearth" aria-label="Ajouter Volt Street Max aux favoris">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+                    <p>STEPFORGE</p>
+                    <h3>Volt Street Max</h3>
+                    <div class="prices">
+                        <h2>199 €</h2>
+                        <h3 aria-label="Ancien prix 239 euros">239 €</h3>
+                    </div>
+                    <button class="add-to-cart" aria-label="Ajouter Volt Street Max au panier">
 
-    </div>
-</section>
+                        <ion-icon name="bag-handle-outline"></ion-icon> AJOUTER AU PANIER
+                    </button>
+                </div>
+            </div>
+        </section>
 
-<footer>
+        <section id="about" class="about" aria-labelledby="about-title">
+            <p>POURQUOI NOUS CHOISIR</p>
+            <h2 id="about-title">LA DIFFÉRENCE STEPFORGE</h2>
+            <div class="avantages">
+                <div class="avantage">
+                    <div class="icon-box">
+                        <ion-icon class="icone" name="rocket-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                    <h3>LIVRAISON RAPIDE</h3>
+                    <p>
+                        Livraison express gratuite sur toutes les commandes.
+                        Recevez vos sneakers sous 48h, partout en Europe.
+                    </p>
+                </div>
+                <div class="avantage">
+                    <div class="icon-box">
+                        <ion-icon class="icone" name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                    <h3>100% AUTHENTIQUE</h3>
+                    <p>
+                        Chaque paire est vérifiée par notre équipe d'experts.
+                        Authenticité garantie ou remboursé, sans discussion.
+                    </p>
+                </div>
+                <div class="avantage">
+                    <div class="icon-box">
+                        <ion-icon class="icone" name="refresh-outline" aria-hidden="true"></ion-icon>
+                    </div>
+                    <h3>RETOURS GRATUITS</h3>
+                    <p>
+                        Pas la bonne taille ? Retournez toute paire non portée
+                        sous 30 jours pour un remboursement intégral.
+                        Simple et sans tracas.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+<footer role="contentinfo" aria-label="Pied de page">
     <div class="shop">
         <h2>BOUTIQUE</h2>
         <a href="#">Nouveautés</a>
@@ -216,11 +226,20 @@
     <div class="follow-us">
         <h2>SUIVEZ-NOUS</h2>
         <div class="logos">
-            <ion-icon class="logo" name="logo-instagram"></ion-icon>
-            <ion-icon class="logo" name="logo-twitter"></ion-icon>
-            <ion-icon class="logo" name="logo-tiktok"></ion-icon>
-            <ion-icon class="logo" name="logo-youtube"></ion-icon>
+            <a href="#" aria-label="Instagram">
+                <ion-icon class="logo" name="logo-instagram" aria-hidden="true"></ion-icon>
+            </a>
+            <a href="#" aria-label="Twitter">
+                <ion-icon class="logo" name="logo-twitter" aria-hidden="true"></ion-icon>
+            </a>
+            <a href="#" aria-label="TikTok">
+                <ion-icon class="logo" name="logo-tiktok" aria-hidden="true"></ion-icon>
+            </a>
+            <a href="#" aria-label="YouTube">
+                <ion-icon class="logo" name="logo-youtube" aria-hidden="true"></ion-icon>
+            </a>
         </div>
+
     </div>
 </footer>
 <hr class="line" />

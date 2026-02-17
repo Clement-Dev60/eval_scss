@@ -28,12 +28,16 @@ nav {
 		}
 		text-decoration: none;
 	}
-	& ion-icon {
-		font-size: 1.5rem;
-		color: grey;
+	& button {
+		background: none;
+		border: none;
+		cursor: pointer;
+		& ion-icon {
+			font-size: 1.5rem;
+			color: grey;
+		}
 	}
 	& .icons {
-		cursor: pointer;
 		display: flex;
 		gap: 10px;
 	}
@@ -293,7 +297,7 @@ hr {
 		gap: 5%;
 		margin-top: 5%;
 		& .avantage {
-			width:18%;
+			width: 18%;
 			& .icon-box {
 				& .icone {
 					border: 1px solid white;
@@ -343,6 +347,14 @@ footer {
 		display: flex;
 		justify-content: center;
 		flex-wrap: nowrap;
+		& a {
+			& .logo {
+				border: 1px solid grey;
+				border-radius: 100%;
+				padding: 5%;
+				color: grey;
+			}
+		}
 	}
 
 	& a {
@@ -351,11 +363,95 @@ footer {
 		font-size: 12px;
 		line-height: 30px;
 	}
+}
+@media screen and (max-width: 768px) {
+	nav {
+		justify-content: space-between;
+		padding: 0 20px;
+	}
 
-	& .logo {
-		border: 1px solid grey;
-		border-radius: 100%;
-		padding: 5%;
-		color: grey;
+	nav {
+		& .liens {
+			display: none;
+		}
+		& .icons ion-icon:last-child {
+			display: block;
+		}
+	}
+
+	.hero {
+		text-align: left;
+
+		& .texts {
+			margin: 20% 1%;
+		}
+
+		& .encadre {
+			width: 50%;
+		}
+
+		& h1 {
+			width: 100%;
+			font-size: 36px;
+			padding-right: 20%;
+			margin-bottom: 5%;
+			margin-top: 10%;
+		}
+
+		& .desc {
+			width: 100%;
+			font-size: 12px;
+			padding-right: 15%;
+			margin-bottom: 15%;
+		}
+
+		& .buttons {
+			align-items: center;
+		}
+
+		& .bottom-hero {
+			display: flex;
+			justify-content: bottom;
+			& a {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+	.brands {
+		flex-wrap: wrap;
+		gap: 7%;
+		padding: 10%;
+		line-height: 250%;
+		& h2 {
+			font-size: 14px;
+		}
+	}
+
+	.news .card {
+		width: 100%;
+	}
+
+	.about {
+		flex-direction: column;
+		align-items: center;
+		& .avantages {
+			flex-direction: column;
+			align-items: center;
+
+			& .avantage {
+				width: 100%;
+			}
+		}
+	}
+
+	footer {
+		flex-direction: column;
+		gap: 2rem;
+		text-align: center;
+	}
+
+	footer .logos {
+		justify-content: center;
 	}
 }
