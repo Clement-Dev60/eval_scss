@@ -1,60 +1,115 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/pages/index.css" />
-  <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/pages/index.css" />
+    <meta name="description" content="" />
 </head>
 
 <body>
-  <header class="header">
-    <div class="profil">
-      <img class="icone" src="assets/images/c1z7t7e.PNG" alt="">
-      <div class="logo">Clément Humez</div>
-    </div>
-    <div class="logo" data-fr="Développeur Junior" data-en="Junior Developer">Développeur Junior</div>
-    <nav>
-      <button id="darkModeToggle"></button>
-      <a class="location" href="#" data-fr="ACCUEIL" data-en="HOME">ACCUEIL</a>
-      <a class="location" href="#" data-fr="À PROPOS" data-en="ABOUT">À PROPOS</a>
-      <a class="location" href="#" data-fr="PROJETS" data-en="PROJECTS">PROJETS</a>
-      <a class="location" href="#" data-fr="CONTACT" data-en="CONTACT">CONTACT</a>
-    </nav>
-  </header>
-
-  <div class="social-bar">
-    <a href="https://www.linkedin.com/in/cl%C3%A9ment-humez-54962533a/" target="_blank"><img
-        src="assets/images/linkedin.svg" alt=""></a>
-    <a href="https://github.com/Clement-Dev60" target="_blank"><img src="assets/images/github.svg" alt=""></a>
-  </div>
-  <div class="english">
-    <button id="langToggle"></button>
-  </div>
-
-  <section class="hero">
-    <button data-fr="Plus de Projets" data-en="More Projects">Plus de Projets</button>
-  </section>
-
-  <footer class="footer">
-    <div class="contact-line">
-      <h2 class="test-anim">Contact</h2>
-      <hr>
-    </div>
-  </footer>
-
-  <div class="cookie-popup" id="cookiePopup">
-    <div class="cookie-icon">🍪</div>
-    <div class="cookie-content">
-      <p>Ce site utilise des cookies pour assurer son bon fonctionnement et améliorer votre expérience.</p>
-    </div>
-    <button class="close-btn" id="closeBtn" aria-label="Fermer">&times;</button>
-  </div>
-
 </body>
+<nav class="nav">
+    <h3>
+        <a href="index.html">STEP<span class="forge">FORGE</span></a>
+    </h3>
+    <div class="liens">
+        <a class="liens-nav" href="#">ACCUEIL</a>
+        <a class="liens-nav" href="#">COLLECTION</a>
+        <a class="liens-nav" href="#">À PROPOS</a>
+        <a class="liens-nav" href="#">CONTACT</a>
+    </div>
+    <div class="icons">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+        <ion-icon name="menu-outline"></ion-icon>
+    </div>
+</nav>
 
+<section class="hero">
+    <div class="texts">
+        <p class="encadre">NOUVELLE COLLECTION EN 2026</p>
+        <h1>WALK THE FUTURE<span>.</span></h1>
+        <p class="desc">Des sneakers premiums conçues pour ceux qui donnent le rythme. Confort inégalé, design
+            audacieux, attitude
+            streetwear.</p>
+        <div class="buttons">
+            <button class="buy">ACHETER <ion-icon name="arrow-forward-outline"></ion-icon></button>
+            <button class="our-story">NOTRE HISTOIRE</button>
+        </div>
+    </div>
+    <div class="bottom-hero">
+        <a href="#">DÉFILER <ion-icon name="chevron-down-outline"></ion-icon></a>
+    </div>
+</section>
+<div class="brands">
+    <h2>NIKE</h2>
+    <span>•</span>
+    <h2>ADIDAS</h2>
+    <span>•</span>
+    <h2>NEW BALANCE</h2>
+    <span>•</span>
+    <h2>PUMA</h2>
+    <span>•</span>
+    <h2>JORDAN</h2>
+</div>
+<hr>
+<section class="news">
+    <p>SÉLÉCTIONNÉ POUR VOUS</p>
+    <h2>NOUVEAUTÉS</h2>
+    <div class="card">
+        <img src="" alt="">
+        <p class="new">NOUVEAU</p>
+        <button class="hearth"><ion-icon name="heart-outline"></ion-icon></button>
+        <p>STEPFORGE</p>
+        <h3>Phantom Runner X</h3>
+        <h2>189 €</h2>
+        <button class="add-to-cart"></button>
+    </div>
+</section>
+
+<footer>
+    <div class="shop">
+        <h2>BOUTIQUE</h2>
+        <a href="#">Nouveautés</a>
+        <a href="#">Meiileures ventes</a>
+        <a href="#">Homme</a>
+        <a href="#">Femme</a>
+        <a href="#">Promotions</a>
+    </div>
+
+    <div class="help">
+        <h2>AIDE</h2>
+        <a href="#">FAQ</a>
+        <a href="#">Infos livraison</a>
+        <a href="#">Retours & échanges</a>
+        <a href="#">Guide des tailles</a>
+        <a href="#">Nous contacter</a>
+    </div>
+
+    <div class="legal">
+        <h2>LÉGAL</h2>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions générales</a>
+        <a href="#">Politique de cookies</a>
+        <a href="#">Accesibilité</a>
+    </div>
+    
+    
+    <div class="follow-us">
+        <h2>SUIVEZ-NOUS</h2>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-tiktok"></ion-icon>
+        <ion-icon name="logo-youtube"></ion-icon>
+    </div>
+
+</footer>
 <script src="assets/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+</script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </html>
