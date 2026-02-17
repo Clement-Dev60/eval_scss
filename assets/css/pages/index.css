@@ -125,6 +125,7 @@ nav .icons {
   width: 100%;
   padding: 2%;
   background-color: rgb(52, 52, 52);
+  scroll-margin-top: 8vh;
 }
 .brands h2 {
   font-size: 20px;
@@ -148,11 +149,12 @@ hr {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 5%;
+  padding: 5% 12%;
+  scroll-margin-top: 8vh;
 }
 .news p {
   font-size: 10px;
-  color: grey;
+  color: rgb(154, 255, 157);
   margin-bottom: 1%;
 }
 .news h2 {
@@ -222,16 +224,26 @@ hr {
   display: flex;
   justify-content: left;
   margin: 0 20px 10px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 .news .card h2 {
   display: flex;
   justify-content: left;
   margin: 0 20px 20px;
-  font-size: 26px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 900;
   color: white;
+}
+.news .card .prices {
+  display: flex;
+  text-align: center;
+}
+.news .card .prices h3 {
+  text-decoration: line-through;
+  color: lightgrey;
+  font-size: 16px;
+  margin-left: -5%;
 }
 .news .card .add-to-cart {
   width: calc(100% - 40px);
@@ -244,10 +256,57 @@ hr {
   cursor: pointer;
   font-weight: 600;
   letter-spacing: 2px;
+  font-size: 10px;
 }
 .news .card:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.about {
+  background-color: rgb(63, 63, 63);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5% 12%;
+  padding-bottom: 8%;
+  scroll-margin-top: 8vh;
+  width: 100%;
+}
+.about p {
+  font-size: 8px;
+  color: rgb(154, 255, 157);
+  margin-bottom: 2%;
+}
+.about h2 {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 3%;
+  color: rgb(255, 255, 255);
+}
+.about .avantages {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 5%;
+}
+.about .avantages .avantage {
+  width: 18%;
+}
+.about .avantages .avantage .icon-box .icone {
+  border: 1px solid white;
+  padding: 7%;
+  border-radius: 10px;
+}
+.about .avantages .avantage h3 {
+  margin: 5%;
+  font-size: 12px;
+  font-weight: 900;
+}
+.about .avantages .avantage p {
+  line-height: 180%;
 }
 
 footer {

@@ -125,6 +125,7 @@ nav {
 	width: 100%;
 	padding: 2%;
 	background-color: rgb(52, 52, 52);
+	scroll-margin-top: 8vh;
 	& h2 {
 		font-size: 20px;
 		color: white;
@@ -147,10 +148,11 @@ hr {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	padding: 5%;
+	padding: 5% 12%;
+	scroll-margin-top: 8vh;
 	& p {
 		font-size: 10px;
-		color: grey;
+		color: rgb(154, 255, 157);
 		margin-bottom: 1%;
 	}
 	& h2 {
@@ -220,16 +222,27 @@ hr {
 			display: flex;
 			justify-content: left;
 			margin: 0 20px 10px;
-			font-size: 20px;
+			font-size: 18px;
 			font-weight: 600;
 		}
 		& h2 {
 			display: flex;
 			justify-content: left;
 			margin: 0 20px 20px;
-			font-size: 26px;
-			font-weight: 700;
+			font-size: 22px;
+			font-weight: 900;
 			color: white;
+		}
+
+		& .prices {
+			display: flex;
+			text-align: center;
+			& h3 {
+				text-decoration: line-through;
+				color: lightgrey;
+				font-size: 16px;
+				margin-left: -5%;
+			}
 		}
 		& .add-to-cart {
 			width: calc(100% - 40px);
@@ -242,11 +255,61 @@ hr {
 			cursor: pointer;
 			font-weight: 600;
 			letter-spacing: 2px;
+			font-size: 10px;
 		}
 	}
 	& .card:hover {
 		transform: translateY(-2px);
 		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+	}
+}
+
+.about {
+	background-color: rgb(63, 63, 63);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 5% 12%;
+	padding-bottom: 8%;
+	scroll-margin-top: 8vh;
+	width: 100%;
+	& p {
+		font-size: 8px;
+		color: rgb(154, 255, 157);
+		margin-bottom: 2%;
+	}
+	& h2 {
+		font-size: 28px;
+		font-weight: 900;
+		margin-bottom: 3%;
+		color: rgb(255, 255, 255);
+	}
+
+	& .avantages {
+		display: flex;
+		justify-content: center;
+		gap: 5%;
+		margin-top: 5%;
+		& .avantage {
+			width:18%;
+			& .icon-box {
+				& .icone {
+					border: 1px solid white;
+					padding: 7%;
+					border-radius: 10px;
+				}
+			}
+			& h3 {
+				margin: 5%;
+				font-size: 12px;
+				font-weight: 900;
+			}
+			& p {
+				line-height: 180%;
+			}
+		}
 	}
 }
 
